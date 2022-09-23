@@ -1,185 +1,80 @@
-.top{
-    display:flex;/*讓項目水平排列*/
-}
-.left{
-    flex:none;/*固定配置*/
-    margin:10px;font-size:20px;
-}
-.desktop-menu{
-    flex:auto;
-    justify-content:flex-end;
-    display:block;
-    display:flex; /*讓項目水平排列*/
-    
-}
-.mobile-menu{
-    flex:auto;
-    justify-content:flex-end;
-    display:flex;/*讓項目水平排列*/
-    display:none;
-}
-.item{
-    flex:none;
-    margin:5px;margin-right: 10px;
-    font-size:20px;text-align:center;
-}
-.welcome{
-    display:flex;/*讓項目水平排列*/
-    justify-content: center;
-    align-items: center;
-    height:300px;background-color: lightblue;
-}
-.space{
-    height:15px;
-}
-.headline{
-    font-size:40px;font-weight: bold;
-}
-.pic{
-    display:flex;justify-content:center;
-}
-.name{
-    display:flex;justify-content:center;
-    width:1200px; 
-}
-.namepic{
-    display:flex;/*讓項目水平排列*/ 
-    flex:none;/*固定配置*/
-    width:580px;height:50px;
-    background-color:lightblue;
-    margin:10px;
-    align-items: center;   
-}
-.nameimg{
-    flex:none;
-    width:80px;height:50px;
-    max-width:100%;
-   
-}
-.promotion{
-    flex:none;
-    font-size:20px;
-    margin-left:10px;
-}
-.list{
-    display:flex;
-    justify-content: center;
-    width:1200px;
-}
-.titlepic{
-    flex-direction: column;
-    flex:none;
-    justify-content: center;
-    width:280px;height:auto;
-    background-color:lightblue;
-    margin:10px;
-   
-}
-.titleimg{
-    justify-content: center;
-    width:280px;height:150px;
-    margin:0px;
-    max-width:100%;
-}
-.title{
-    font-size:20px;
-    text-align: center;
-    background-color:lightblue;
-    line-height:50px;      
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width",initial-scale-1.0/>
 
-@media( max-width:1200px){
-    .name{
-        display:flex;
-        width:90%;
-        
-    }
-    .namepic{
-        display:flex;/*讓項目水平排列*/ 
-        flex:none;/*固定配置*/
-        width:45%;height:50px;
-
-    }
-  
-    .list{
-        flex-wrap:wrap;
-        width:90%;
-        
-    }
-    .titlepic{
-        
-        width:45%;height:auto;
-        align-items: center;
-        justify-content: center;
-        overflow:hidden; 
-       
-    }
-    .titleimg{
-        
-        width:100%; height:auto;
-        max-width:100%;height: auto; 
-        margin-bottom:0px; 
-        overflow-x:hidden;   
-    }
-    .title{
-        text-align: center;
-        width:100%;height:50px;   
-    }
-}
-
-@media(max-width:600px){
-    .desktop-menu{
-        flex:auto;
-        justify-content:flex-end;
-        display:none;
-    }
-    .mobile-menu{
-        flex:none;
-        justify-content:flex-end;
-        margin-left: auto;
-        display:block;  
-    }
-    img{
-        flex:none;margin:10px;
-    }
-   
-    .name{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width:90%;
-    }
-    .namepic{
-        display:flex;/*讓項目水平排列*/ 
-        flex:none;/*固定配置*/
-        align-items: center;
-        width:90%;height:50px; 
-        
-    }
-    .nameimg{
-        flex:none;/*固定配置*/
-        width:80px;height:50px;
-        margin-left:0px;
-    }
-    .list{
-        flex-wrap:wrap;
-        
-    }
-    .titlepic{
-       
-        width:90%;height:auto;
-        align-items: center;
-        justify-content: center;
-        overflow:hidden;  
-    }
-    .titleimg{
-        width:100%;height:auto;
-        max-width:100%;height: auto; 
-        margin-bottom:0px; 
-        overflow-x:hidden;  
-    }
-    .title{
-        text-align: center;
-        width:100%;height:50px;   
-    }
-}
+    <meta charset='utf-8'/>
+    <title>Assignment - Week 1</title>
+    <link rel="stylesheet" type="text/css" href="week1.css">
+</head>
+<body>
+    <div class="top">
+        <div class="left">My Website</div>
+        <div class="desktop-menu">
+            <div class="item">Item 1 </div>
+            <div class="item">Item 2 </div>
+            <div class="item">Item 3 </div>
+            <div class="item">Item 4 </div>
+        </div>
+        <div class="mobile-menu">
+            <img src="burger_line.png" width='30' height='30'/>
+        </div>
+    </div>
+    <div class="welcome">
+        <div class="headline">Welcome to MyHome</div>
+    </div>
+    <div class="space"></div>
+    <div class="pic">
+        <div class="name"> 
+            <div class="namepic">
+                <img class="nameimg" src="mon.png"  alt="mountain" width='80' height='50'/>
+                <div class="promotion">Promotion 1</div>
+            </div>
+            <div class="namepic">
+                <img class="nameimg" src="mon.png" alt="mountain"/>
+                <div class="promotion">Promotion 2</div>
+            </div>
+        </div>
+    </div>
+    <div class="pic">
+        <div class="list">
+            <div class="titlepic">
+                <img class="titleimg" src="mon.png" alt="mountain"/>
+                <div class="title">Title 1</div>
+            </div>
+            <div class="titlepic">
+                <img class="titleimg" src="mon.png" alt="mountain"/>
+                <div class="title">Title 2</div>
+            </div>
+            <div class="titlepic">
+                <img class="titleimg" src="mon.png" alt="mountain"/>
+                <div class="title">Title 3</div>
+            </div>
+            <div class="titlepic">
+                <img class="titleimg" src="mon.png" alt="mountain"/>
+                <div class="title">Title 4</div>
+            </div>
+        </div>
+    </div>
+    <div class="pic">
+        <div class="list">
+            <div class="titlepic">
+                <img class="titleimg" src="mon.png" alt="mountain"/>
+                <div class="title">Title 5</div>
+            </div>
+            <div class="titlepic">
+                <img class="titleimg" src="mon.png" alt="mountain"/>
+                <div class="title">Title 6</div>
+            </div>
+            <div class="titlepic">
+                <img class="titleimg" src="mon.png" alt="mountain"/>
+                <div class="title">Title 7</div>
+            </div>
+            <div class="titlepic">
+                <img class="titleimg" src="mon.png" alt="mountain"/>
+                <div class="title">Title 8</div>
+            </div>
+        </div>   
+    </div>
+</body>
+</html>
