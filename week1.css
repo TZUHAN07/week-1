@@ -1,3 +1,6 @@
+body{
+    margin:0px 0px 0px 0px;
+}
 .top{
     display:flex;/*讓項目水平排列*/
 }
